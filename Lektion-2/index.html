@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bygg din nya hemsida med oss på Hemsida.nu Du behöver ingen tidigare erfarenhet av HTML.. Kom igen, det blir kul!">
+    <meta name="keywords" content="lektion 1, ec, utbildning, html, css">
+    <meta name="author" content="EC-utbildning">
+    <title>Lektion 1 - genomgång av element</title>
+
+    <style>
+        .border{
+            border: 1px solid black;
+        }
+        .custom-class{
+            background: black;
+        }
+        /*  Medium devices (tablets, 768px and up) */
+        @media(min-width: 768px){
+            .custom-class{
+                background: green;
+            }
+        }
+        /* Large devices (Desktops 992px and up) */
+        @media(min-width: 992px){
+            .custom-class{
+                background: blue;
+            }
+        }
+        /* Extra large devices (large desktops, 1200px and up) */
+        @media(min-width: 1200px){
+            .custom-class{
+                background: yellow;
+            }
+        }
+        /* Extra extra large devices (Extra large desktops, 1400px and up) */
+        @media(min-width: 1400px){
+            .custom-class{
+                background: orange;
+            }
+        }
+    </style>
+</head>
+<body class="custom-class">
+    
+    <!-- BLOCK ELEMENT -->
+    <section class="border">Section</section>
+    <header class="border">Header</header>
+    <footer class="border">Footer</footer>
+    <main class="border">Main</main>
+    <nav class="border">Nav</nav>
+    <aside class="border">Aside</aside>
+    <div class="border">Div</div>
+    <p class="border">Paragraph</p>
+
+    <h1 class="border">H1</h1>
+    <h2 class="border">H2</h2>
+    <h3 class="border">H3</h3>
+    <h4 class="border">H4</h4>
+    <h5 class="border">H5</h5>
+    <h6 class="border">H6</h6>
+    <hr>
+    <br>
+
+    <!-- INLINE ELEMENT -->
+    <i class="border">Italic</i>
+    <em class="border">Emphasize</em> <!-- använde hellre än i, då den lägger mer vikt-->
+    <b class="border">Bold</b>
+    <strong class="border">Strong</strong> <!-- använd hellre än b, då den lägger mer vikt-->
+    <u class="border">Underline</u>
+    <ins class="border">Inserted</ins>
+    <span class="border">Span</span>
+    <small class="border">Small</small>
+    <del class="border">Del</del>
+    <s class="border">S</s>
+    
+    <a href="about.html" target="_blank">En länk</a> <!-- _blank öppnar nytt fönster-->
+
+    <!-- LISTOR -->
+    <ul class="border"> <!-- unordered list -->
+        <li>Unordered list item</li> <!-- list item -->
+        <li class="border">Unordered list item</li>
+        <li>Unordered list item</li> 
+    </ul>
+
+    <ol class="border"> <!-- ordered list-->
+        <li>Ordered list item</li>
+        <li class="border">Ordered list item</li>
+        <li>Ordered list item</li>
+    </ol>
+
+    <!-- TABLE -->
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Column</td>
+                <td>Column</td>
+            </tr>
+            <tr>
+                <td>Column</td>
+                <td>Column</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <!-- BILDER, källa pexels.com -->
+    <img src="en bild som inte finns.png" alt="beskrivande text">
+    <div class="border">
+    <img width="200px" src="https://images.pexels.com/photos/4274984/pexels-photo-4274984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Bild på löv">
+    </div>    
+    <img height="200px" src="assets/images/bildpalov.jpg" alt="bild på löv">
+
+
+
+</body>
+</html>
