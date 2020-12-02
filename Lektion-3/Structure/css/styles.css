@@ -33,8 +33,27 @@ a {
 .btn-small {
     padding: 0.3rem 1rem;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
 }
-
+.btn-jonas {
+    background-color: #3c4b80;
+    color: #eee;
+}
+.btn-jonas:hover {
+    background-color: #000000;
+    color: #eee;
+}
+.btn-primary {
+    background-color: #ae02cc;
+    color: #222;
+}
+.btn-primary:hover {
+    background-color: #075ecf;
+    color: #222;
+}
 /* card 1 start */
 .card-1 {
     background-color: #222;
@@ -100,6 +119,7 @@ a {
     margin: 1rem;
     display: inline-block;
 }
+
 /* links end */
 
 /* buttons start */
