@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <form>
+        <form id="regForm" action="thanks.html">
         <!-- <form action="page.php" method="GET"> -->
         <!-- 
         
@@ -30,9 +30,69 @@
 
         Dem här valen brukar man hantera med Javascript istället för då får vi en bättre kontroll. 
         -->
-
+            <div class="form-group">
             <label for="firstName">First name: </label>
-            <input type="text" id="firstName" name="firstName">
+            <input type="text" id="firstName" name="firstName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input class="form-control" type="email" name=email id="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input class="form-control" type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="age">Age: </label>
+                <input class="form-control" type="number" name="age" id="age" min="1" max="5">
+            </div>
+            <div class="form-group">
+                <label for="date">Date: </label>
+                <input class="form-control" type="date" name="date" id="date">
+            </div>
+            <!-- SELECT -->
+            <div>
+                <label for="role">Role: </label>
+                <select name="role" id="role" class="form-control">
+                    <option value="" disabled selected></option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <!-- RADIOBUTTONS  (name grupperar dem)-->
+            <p>Gender:</p>
+            <div>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </div>
+
+
+            <!-- CHECKBOXES -->
+            <div>
+                <div class="terms form-check">
+                    <input type="checkbox" name="terms" id="terms" required class="form-check-input">
+                    <label for="terms" class="form-check-label">I have read and agree to the terms and conditions</label>
+                </div>
+                <div class="news">
+                    <input type="checkbox" name="news" id="news" checked>
+                    <label for="terms">I would like to subscribe to the newsletter</label>
+                </div>
+            </div>
+            <div class="mbt-3">
+                <label for="message">Message: </label><br>
+                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
+            </div>
+
+            
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <button class="btn btn-secondary">Submit</button> <!-- blir automatiskt en submit knapp om den är inuti ett formulär-->
+            
         </form>
     </div>
     
